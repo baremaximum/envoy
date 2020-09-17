@@ -8,4 +8,8 @@ COPY . ./code
 RUN pip3 install -q Flask==0.11.1
 
 RUN chmod u+x /usr/local/bin/start_service.sh
+<<<<<<< HEAD
 ENTRYPOINT /usr/local/bin/start_service.sh
+=======
+ENTRYPOINT ["/bin/sh", "/usr/local/bin/start_service.sh"]
+>>>>>>> 026df0ed4... updated Dockerfiles to use exec format on CMD and ENTRYPOINT blocks
