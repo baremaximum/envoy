@@ -2,6 +2,7 @@ version: '3.7'
 services:
 
   front-envoy:
+    build:
       context: .
       dockerfile: Dockerfile-frontenvoy
     networks:
